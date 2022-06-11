@@ -1,0 +1,1 @@
+start chrome https://webacademy.comau.com/login/?lang=it

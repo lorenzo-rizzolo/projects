@@ -1,0 +1,2 @@
+es 2[10][5]
+10 è il numero di righe e 5 quello di colonne

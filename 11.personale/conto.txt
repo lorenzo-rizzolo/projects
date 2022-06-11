@@ -1,0 +1,14 @@
+CONTO:
+260   |  paghetta   |  18-04-2022
+-100   |  apple   |  18-04-2022
+30   |  nonni pasqua    |  18-04-2022
+140   |  non ricordo   |  18-04-2022
+-10   |  non ricordo   |  18-04-2022
+-10   |  non so    |  19-04-2022
+-70   |  mouse e tastiera   |  20-04-2022
+20   |  soldi nonna   |  24-04-2022
+120   |  paghetta   |  29-04-2022
+50   |  paghetta   |  30-04-2022
+-50   |  in posta   |  03-05-2022
+-240   |  volante   |  04-05-2022
+-10   |  merenda   |  06-05-2022

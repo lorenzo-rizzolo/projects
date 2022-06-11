@@ -1,0 +1,30 @@
+import turtle
+
+linea = turtle.Turtle()
+turtle.bgcolor("black")
+colori = ["red","green","blue","white","yellow","violet"]
+
+for i in range(len(colori)):
+    linea.color(colori[i])
+    linea.forward(100)
+    linea.left(30)
+    linea.forward(70)
+    linea.left(60)
+    linea.forward(100)
+    linea.left(90)
+    linea.forward(100)
+    linea.left(30)
+    linea.forward(70)
+    linea.left(60)
+    linea.forward(100)
+    linea.left(90)
+    linea.forward(100)
+    linea.left(90)
+    linea.forward(100)
+    linea.left(90)
+    linea.forward(100)
+    linea.left(180)
+    linea.forward(100)
+    linea.left(30)
+    linea.forward(70)
+    linea.left(150)

@@ -1,0 +1,95 @@
+body{
+    font-size: 120%;
+    cursor: default;
+    margin: 0px;
+}
+
+header{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	padding: 25px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+header .title{
+    font-size: 280%;
+    color: blueviolet;
+}
+header a{
+    text-decoration: none;
+    font-size: 150%;
+    color: blueviolet;
+}
+a:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-size: 150%;
+}
+.contenuto{
+    padding: 25px;
+    font-size: 180%;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    color: white;
+    text-align: left;
+}
+.contenuto p{
+    font-size: 110%;
+}
+.contenuto strong{
+    color: gold;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+.contenuto span{
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 150%;
+}
+
+.box{
+    padding: 25px;
+    font-size: 140%;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: blueviolet;
+}
+.box strong{
+    color: gold;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+.box span{
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+footer{
+    margin-top: 20px;
+}
+.back{
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    padding: 15px;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom:50px;
+    margin-left: 20px;
+    color: blueviolet;
+}

@@ -1,0 +1,61 @@
+Fai CTRL+F per trovare parole
+ROBOSIM
+
+STATO T1: uso manuale dell'Arm. 
+STATO AUTO: l'arm si muove a seconda di un programma dal terminale.
+STATO REMOTE: l'arm è gestito da apparecchiature esterne.
+
+SEGNALI DIGITALI:		$DIN $DOUT | Porta un singolo bit 
+SEGNALI ANALOGICI:	$AIN $AOUT | Può portare 16 bit, utili per i sensori
+SEGNALI FLESSIBILI:	$FMI $FMO  | luinghezza finoa  32 bit 
+COMANDI: https://webacademy.comau.com/pluginfile.php/37055/mod_scorm/imsmanifest/11/story_content/external_files/glossary/index.html
+
+TERNA WORLD:	Assi visti da fuori o terna dell'ambiente.
+TERNA BASE:		Assi del braccio, posizione dell'arm.
+TERNA UFRAME:	Assi del banco da lavoro.
+TERNA TOOL:		Posizione dell'utensile rispetto alla flangia
+TERNA FLANGIA:	Assi del polso dell'arm.
+da remoto la terna uframe si muove, mentre l'utensile sta fermo, in locale invece il contrario.
+
+
+MESSAGE BAR (ERRORI):
+VERDE: informational, sparisce quando informazione non più valida.
+BLU: premi reset per rimuovere.
+BIANCO: latched, vai su alar e togli.
+GIALLO: errore del processo (come saldatura), premi reset.
+ROSSO: acensione del led stato, togli anomalia e premi reset.
+VIOLA: fatal, per togliere spegni e riaccendi-> premi "completo(cold)".
+
+FIELDBUS
+I fieldbus collegano i dispositivi dell'arm.
+Ci sono i dispositivi MASTER e quelli SLAVE.
+I MASTER controllano e comandano gòli SLAVE. in alcuni casi un dispositivo 
+SLAVE se controlla altri dispositivi si può anche definire MASTER.
+
+
+CALCOLO DELLE TERNE 
+METODO STANDARD 
+METODO 4 PUNTI
+per calcolare le terne si usa il tool master 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

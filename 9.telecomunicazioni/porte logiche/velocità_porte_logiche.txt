@@ -1,0 +1,5 @@
+VELOCITA' DI UNA PORTA LOGICA
+il segnale di uscita è ritardato rispetto al segnale di entrata.
+2 problemi:
+	1. propagazione: disturbi esterni.
+	2. commutazione: tempo che il segnale impiega per dare risposta.

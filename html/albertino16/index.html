@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>abertino</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function bottone(){
+                alert("hai cliccato il bottone");
+            }
+        </script>
+    </head>
+    <body>
+        <div  class="frase">
+            <p>ciao</p>
+        </div>
+
+        <a href="specifiche.html">link</a><br>
+        <button onclick="bottone()">ciao sono un bottone</button><br>
+
+
+        <script>
+            function invia(){
+                var dati = document.getElementById('input').value;
+                alert(dati);
+            }
+
+            function check(){
+                if( document.getElementById('check').checked==1 ){
+                    alert("ok");
+                }
+            }
+        </script>
+        <input id="input" type="text"> <button onclick="invia()">Invia</button><br>
+        <input id="check" type="checkbox"> <button onclick="check()">Invia</button>
+        <textarea></textarea>
+
+
+        <br>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </body>
+</html>

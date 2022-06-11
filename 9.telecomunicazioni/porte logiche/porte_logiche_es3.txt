@@ -1,0 +1,17 @@
+devo accendere una lampadina.
+1: se ne premo uno solo la lampada si accende. 
+2: se ne premo due in contemporanea si spegne.
+3: se ne premo tre si accende.
+
+A B C  Y
+0 0 1  1  
+0 0 0  0-> max1 a+b+c
+0 1 1  0-> max2 a+!b+!c
+0 1 0  1
+1 0 1  0-> max3 !a+b+!c
+1 0 0  1
+1 1 1  1
+1 1 0  0-> max4 !a+!b+c
+
+MAX = (a+b+c)*(a+!b+!c)*(!a+b+!c)*(!a+!b+c)
+

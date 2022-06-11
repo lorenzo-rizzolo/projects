@@ -1,0 +1,1 @@
+shutdown /s /f /t 30 /c "spegnimento....."

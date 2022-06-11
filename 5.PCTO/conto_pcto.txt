@@ -1,0 +1,5 @@
+mail TheCloudAgnelli@gmail.com - thecloudagnelli
+rack: 30115.59 -22% (contenitore per hdd) 
+affitto: 500€/mese
+computer: 1000€
+tot: 31615.59 

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            header{
+                background-color: aquamarine;
+                padding: 10px;
+                margin: 10% auto;
+                margin-top: 20px;
+                margin-bottom: 100px;
+                width: 650px;
+                border-radius: 30px;
+                box-shadow: 0px 0px 15px 0px white;
+            }
+            .ins{
+                background-color: aquamarine;
+                padding: 25px;
+                margin: 10% auto;
+                margin-top: 20px;
+                width: 1020px;
+                border-radius: 30px;
+                box-shadow: 0px 0px 15px 0px white;
+            }
+            .numeri{
+                width: 220px;
+                height: 50px;
+                font-size: 150%;
+                margin-right: 20px;
+                border-radius: 10px;
+            }
+            .numeri:hover{
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            .somma{
+                background-color: blue;
+                color: gold;
+                border-radius: 20px;
+                font-size: 180%;
+                padding: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+        </style>
+        <script>
+            function prodotto(){
+                var n1 = document.getElementById('numero1').value;
+                var n2 = document.getElementById('numero2').value;
+                n2 = Number(n2);
+                n1 = Number(n1);
+                var prod = n1+n2;
+                alert("somma="+prod);
+                return prod;
+            }
+        </script>
+        <title>SOMMA</title>
+    </head>
+    <body>
+        <header><h1>Questa pagina calcola la somma tra 2 numeri</h1></header>
+        <div class="ins">
+            <input type="text" class="numeri" id="numero1" placeholder="Primo numero...">
+            <input type="text" class="numeri" id="numero2" placeholder="Secondo numero...">
+            <button class="somma" onclick="prodotto()">Calcola</button>
+        </div>
+    </body>
+</html>

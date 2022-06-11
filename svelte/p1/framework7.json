@@ -1,0 +1,19 @@
+{
+  "cwd": "C:\\Users\\lollo\\Desktop\\projects\\svelte\\p1",
+  "type": [
+    "web"
+  ],
+  "name": "My App",
+  "framework": "svelte",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}

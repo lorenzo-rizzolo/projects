@@ -1,0 +1,20 @@
+TENSIONE IN INGRESSO: pag 104 in poi
+
+VCC è la tensione in ingresso.
+
+se il circuito è aperto la tensione è uguale mentre corrente=0
+
+quando c'è il cortocircuito la corrente è altissima.
+
+vengono sempre riferiti i valori massimi e minimi di tensione nella quale la porta logica funziona. in mezzo a questi 
+valori ci sono i valori di certezza ovvero dove la porta funziona sicuramente. 
+0 - 0,8 non funziona
+0,8 - 2 incerta
+2 - 5 funziona certa 
+
+C'è anche una zona di incertezza perchè dipende dai materiali della porta logica.
+
+V uscita minima e massima; quando è minima anche la corrente è bassa e viceversa.
+
+molti disturbi sono dati dai campi elettromagnetici
+

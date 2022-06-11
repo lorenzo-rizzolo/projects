@@ -1,0 +1,6 @@
+Le porte logiche si usano in  circuito semplici, hanmno inventato gli msi che sono degli integrati per dispositivi
+a media scala come stampanti o proiettori...
+Comunicano in esadecimale. 
+il multiplexer (MUX) è composto da più canali (ch). abilità un uscita in base all'ingresso che abilitiamo. ha un segnale
+in binario e può leggere sia analogico che digitale.
+riceve più ingressi ed elabora un'uscita. 

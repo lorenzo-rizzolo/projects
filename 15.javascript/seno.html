@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(189, 27, 27);
+            }
+            *{
+                border: 5px solid gold;
+            }
+            header{
+                background-color: rgb(24, 173, 32);
+                padding: 30px;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                width: 850px;
+                margin: 10% auto;
+                font-size: 280%;
+                text-align: center;
+                box-shadow: 0px 0px 25px 0px white;
+            }
+            .ins{
+                background-color: rgb(24, 173, 32);
+                padding: 25px;
+                margin-top: 10px;
+                margin: 10% auto;
+                width: 820px;
+                box-shadow: 0px 0px 25px 0px white;
+                text-align: center;
+            }
+            
+            .numeri{
+                width: 320px;
+                height: 75px;
+                font-size: 250%;
+                margin-right: 20px;
+                border: 3px solid gold;
+                color: blue;
+            }
+            .numeri:hover{
+                box-shadow: 0px 0px 5px 0px white;
+            }
+            .seno{
+                background-color: blue;
+                padding: 20px;
+                color: gold;
+                border: 2px solid gold;
+                font-size: 280%;
+                padding: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .seno:hover{
+                box-shadow: 0px 0px 5px 0px white;
+            }
+        </style>
+        <script>
+            function seno(){
+                var n1 = document.getElementById('grado').value;
+                n1 = Number(n1);
+                n2 = Number(n1*Math.PI/180);
+                var seno = Math.sin(n2).toFixed(4)
+                alert("il seno di "+n1+" e' "+seno);
+                return seno;
+            }
+
+            function coseno(){
+                var n1 = document.getElementById('grado').value;
+                n1 = Number(n1);
+                n2 = Number(n1*Math.PI/180);
+                var coseno = Math.cos(n2).toFixed(4)
+                alert("il coseno di "+n1+" e' "+coseno);
+                return coseno;
+            }
+        </script>
+        <title>SENO E COSENO</title>
+    </head>
+    <body>
+        <header>Questa pagina calcola il seno e il coseno</header>
+        <div class="ins">
+            <input type="text" class="numeri" id="grado" placeholder="Inserire grado..."><br><br>
+            <button class="seno" onclick="seno()">Calcola Seno</button>
+            <button class="seno" onclick="coseno()">Calcola Coseno</button>
+        </div>
+    </body>
+</html>
