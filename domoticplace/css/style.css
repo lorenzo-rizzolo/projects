@@ -95,6 +95,9 @@ hr{
 .ordini{
     text-align: center;
 }
+.ordini li{
+    color: #ffd1dc;
+}
 input{
     color: blueviolet;
     margin: 20px;
