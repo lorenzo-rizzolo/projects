@@ -98,3 +98,52 @@ function elimina(){
 function see(){
     get_coll('ordini');
 }
+
+function invia(){
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var numero = document.getElementById('numero').value;
+    var indirizzo = document.getElementById('indirizzo').value; 
+    var count = 0;
+    //nome
+    if(nome == ""){
+        document.getElementById('nome').style.borderColor = 'red';
+    }else{
+        document.getElementById('nome').style.borderColor = 'green';
+        count+=1;
+    }
+    //email
+    if(email == ""){
+        document.getElementById('email').style.borderColor = 'red';
+    }else{
+        document.getElementById('email').style.borderColor = 'green';
+        count+=1;
+    }
+    //numero
+    if(numero == ""){
+        document.getElementById('numero').style.borderColor = 'red';
+    }else{
+        document.getElementById('numero').style.borderColor = 'green';
+        count+=1;
+    }
+    //indirizzo
+    if(indirizzo == ""){
+        document.getElementById('indirizzo').style.borderColor = 'red';
+    }else{
+        document.getElementById('indirizzo').style.borderColor = 'green';
+        count+=1;
+    }
+    if(document.getElementById('alexa').checked==1 || document.getElementById('apple').checked==1){
+        if(document.getElementById('alexa').checked==1){
+            document.getElementById('scelta').style.border = '2px solid green';
+            document.getElementById('scelta2').style.border = '0PX';
+        }
+        if(document.getElementById('apple').checked==1){
+            document.getElementById('scelta2').style.border = '2px solid green';
+            document.getElementById('scelta').style.border = '0px';
+        }
+    }else{
+        document.getElementById('scelta').style.border = '2px solid red';
+        document.getElementById('scelta2').style.border = '2px solid red';
+    }
+}
