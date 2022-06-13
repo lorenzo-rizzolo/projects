@@ -1,0 +1,174 @@
+body{
+    color: white;
+    cursor: default;
+    margin: 0px;
+}
+
+header{
+    color: black;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	padding: 25px;
+}
+header span{
+    font-size: 170%;
+}
+header .title{
+    font-size: 400%;
+    color: blueviolet;
+}
+
+.info{
+    text-transform: uppercase;
+    margin: 20px;
+    background-color: blueviolet;
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 20px;
+    text-align: center;
+}
+.info nav ul li{
+    display: inline-block;
+    font-size: 150%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+nav ul li:hover{
+    background-color: white;
+    border-bottom: 4px solid black;
+    box-shadow: 0px 5px 10px 0px black;   
+}
+a:hover{
+    color: blueviolet;
+}
+
+.contenuto2, .contenuto1, .contenuto3, .contenuto4{
+    font-size: 70%;
+    border-radius: 20px;
+	background-color: white;
+	color: black;
+	margin: 10px;
+	padding: 15px;
+	display: none;
+	position: absolute;
+	top: 243px;
+	right: 10px;
+	left: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+
+}
+.contenuto2 strong, .contenuto1 strong, .contenuto3 strong, .contenuto4 strong{
+    text-decoration: underline;
+}
+nav ul li:hover .contenuto1,nav ul li:hover .contenuto2,nav ul li:hover .contenuto3,nav ul li:hover .contenuto4{
+	display: block;
+}
+nav ul li span{
+    font-size: 160%;
+}
+
+ul{ 
+    margin-bottom: 0px;
+}
+hr{
+    width: 500px;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.informazioni{
+    margin: 20px;
+    font-size: 150%;
+    border-radius: 20px;
+    background-color: blueviolet;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.ordini{
+    text-align: center;
+}
+input{
+    color: blueviolet;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 150%;
+}
+button{
+    background-color: blueviolet;
+    width: 150px;
+    height: 50px; 
+    color: white;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: blueviolet;
+    color: black;
+}
+.box{
+    background-color: blueviolet;
+    font-size: 170%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    width: 500px;
+    text-align: left;
+}
+.box strong{
+    color: gold;
+    font-size: 120%;
+}
+
+.aggiorna{
+    background-color: blueviolet;
+    width: 800px;
+    height: 100px;
+    font-size: 200%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.accesso{
+    text-align: center;
+    border-bottom: 4px solid blueviolet ;
+}
+input{
+    width: 300px;
+}
+.accedi{
+    background-color: rgba(137, 43, 226, 0.53);
+    margin: auto;
+    margin-top: 20px;
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+}
+.invia{
+    font-size: 120%;
+    margin: 15px;
+}
+.invia:hover{
+    cursor: pointer;
+    color: white;
+}
+.recupera{
+    text-decoration: underline;
+    color: white;
+    font-size: 150%;
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+#controllo p{
+    font-size: 170%;
+}

@@ -1,0 +1,102 @@
+body{
+    color: white;
+    cursor:default;
+    margin: 0px;
+}
+
+header{
+    color: black;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	padding: 25px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+header .title{
+    font-size: 280%;
+    color: blueviolet;
+}
+header p{
+    margin-bottom: 0px;
+    font-size: 130%;
+}
+header a{
+    text-decoration: none;
+    font-size: 150%;
+    color: blueviolet;
+}
+.box{
+    width: 250px;
+    height: 280px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    /*border:2px solid black;*/
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    /*box-shadow: 0px 0px 10px 0px black;*/
+}
+/*.box:hover{
+    background-color: rgba(137, 43, 226, 0.53);
+}
+.box:hover span{
+    color: white;
+}*/
+.box span{
+    color: blueviolet;
+    font-size: 150%;
+}
+.box img{
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 170px;
+}
+a{
+    text-decoration: none;
+}
+
+.back{
+    width: 200px;
+    text-align: center;
+    font-size: 150%;
+    padding: 15px;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom:50px;
+    margin-left: 20px;
+    color: blueviolet;
+}
+hr{
+    padding: 4px;
+    border-color: blueviolet;
+    background-color: blueviolet;
+}
+.mini-title {
+    background-color: #c06c84;
+    width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 130%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom: 4px solid black;
+}
+.mini-title strong{
+    color: gold;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.titolo{
+    font-size: 250%;
+    color: blueviolet;
+    text-align: center;
+    margin: 20px;
+    margin-top: 50px;
+}

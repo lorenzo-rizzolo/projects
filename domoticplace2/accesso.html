@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Accedi</title>
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
+    <script src="js/ordini.js"></script>
+    <header class="accesso">
+        <span class="title">Accedi prima di ordinare</span>
+    </header>
+    <div class="accedi">
+        <div id="controllo"></div>
+        <input type="name" id="username" placeholder="Username"> <br>
+        <input type="text" id="email" placeholder="Email"> <br>
+        <input type="password" id="password" placeholder="Password">
+        <button class="invia" onclick="accedi()">Accedi</button>
+        <button class="invia" onclick="registrati()">Registrati</button>
+    </div>
+</body>
+</html>

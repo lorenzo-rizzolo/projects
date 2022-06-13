@@ -1,12 +1,14 @@
 body{
     /*background-color: #f8b195;*/
-    color: blueviolet;
+    background-color: #c1e1a7;
+    color: white;
     cursor:default;
     margin: 0px;
 }
 
 header{
     color: gold;
+	background-color: #148d8d;
 	font-family: 'Playfair Display', serif;
 	text-transform: uppercase;
 	padding: 25px;
@@ -16,7 +18,7 @@ header{
 }
 header .title{
     font-size: 280%;
-    color: blueviolet;
+    color: white;
     
 }
 header p{
@@ -26,14 +28,14 @@ header p{
 header a{
     text-decoration: none;
     font-size: 150%;
-    color: blueviolet;
+    color: white;
 }
 header a:hover{
     color: gold;
 }
 
 .box{
-    background-color:blueviolet;
+    background-color:#148d8d;
     width: 250px;
     height: 310px;
     text-align: center;
@@ -48,14 +50,14 @@ header a:hover{
 }
 .box:hover{
     /*background-color: #f8b195;*/
-    background-color: blueviolet76;
+    background-color: #148d8d76;
     color: black;
 }
 .box:hover span{
     color: black;
 }
 .box span{
-    color: blueviolet;
+    color: white;
     font-size: 150%;
 }
 .box img{
@@ -67,7 +69,7 @@ header a:hover{
 }
 
 .click{
-    color: blueviolet;
+    color: white;
     padding: 2%;
     padding-left: 50px;
     padding-right: 50px;
@@ -84,7 +86,7 @@ a{
 }
 
 .back{
-    background-color: blueviolet;
+    background-color: #148d8d;
     width: 200px;
     text-align: center;
     padding: 15px;
@@ -94,16 +96,16 @@ a{
     border-radius: 20px;
     border: 2px solid black;
     box-shadow: 0px 0px 10px 0px black;
-    color: blueviolet;
+    color: white;
 }
 .back:hover{
     color: black;
-    border-color: blueviolet;
-    background-color: blueviolet76;
+    border-color: white;
+    background-color: #148d8d76;
 }
 
 p{
-    background-color: blueviolet;
+    background-color: #148d8d;
     margin: auto;
     margin-top: 10px;
     font-size: 130%;
@@ -119,8 +121,8 @@ p strong{
 }
 
 .ordina, .ordinabut{
-    background-color: blueviolet;
-    color: blueviolet;
+    background-color: #148d8d;
+    color: white;
     text-transform: uppercase;
     text-align: center;
     padding: 20px;
@@ -133,7 +135,7 @@ p strong{
 }
 .ordina:hover, .ordinabut:hover{
     /*background-color: #f8b195;*/
-    background-color: blueviolet76;
+    background-color: #148d8d76;
     color: black;
 }
 .mini-title, .spie{
@@ -154,7 +156,7 @@ p strong{
     padding: 15px;
 }
 .nomeecognome, .indirizzo, .numero{
-    color: blueviolet;
+    color: white;
     text-align: center;
     padding: 20px;
     font-size: 300%;
@@ -167,7 +169,7 @@ p strong{
     font-size: 60%;
 }
 .information{
-    background-color: blueviolet;
+    background-color: #148d8d;
     padding: 15px;
     width: 800px;
     border-radius: 20px;
