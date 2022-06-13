@@ -133,15 +133,19 @@ function invia(){
         document.getElementById('indirizzo').style.borderColor = 'green';
         count+=1;
     }
+    var mode = "";
     if(document.getElementById('alexa').checked==1 || document.getElementById('apple').checked==1){
         if(document.getElementById('alexa').checked==1){
             document.getElementById('scelta').style.border = '2px solid green';
             document.getElementById('scelta2').style.border = '0PX';
+            mode = "alexa";
+            
             count+=1;
         }
         if(document.getElementById('apple').checked==1){
             document.getElementById('scelta2').style.border = '2px solid green';
             document.getElementById('scelta').style.border = '0px';
+            mode = "apple";
             count+=1;
         }
     }else{
@@ -156,12 +160,9 @@ function invia(){
         email = "<li>"+email+"</li>";
         numero = "<li>"+numero+"</li>";
         indirizzo= "<li>"+indirizzo+"</li>"
-        insert_doc('ordini', ordine, {
-            nome: {nome},
-            email: {email},
-            numero: {numero},
-            indirizzo: {indirizzo}
-        });
+        mode = "<li>"+mode+"</li>"
+        text = nome+email+numero+indirizzo+mode;
+        insert_doc('ordini', ordine, {text});
     }else{
         document.getElementById('inserisci').innerHTML = "<p style='color: #ffd1dc; font-size:180%;'>Compila tutti i campi in rosso</p>" ;
     }

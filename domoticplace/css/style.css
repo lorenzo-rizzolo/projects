@@ -2,6 +2,7 @@ body{
     color: white;
     cursor: default;
     margin: 0px;
+    text-align: center;
 }
 
 header{
@@ -138,5 +139,4 @@ button:hover{
     margin: auto;
     padding: 15px;
     margin-top: 20px;
-    margin-bottom: 100px;
 }
