@@ -18,23 +18,17 @@
     </header>
     
     <div class="info">
-        Inserisci i tuoi dati per ricevere un preventivo approssimativo. Ti contatteremo appena possibile in giornata permetterci in contatto con te.
-        Ti ricordiamo che operiamo su qualsiasi tipologia di edificio purchè sia possibile atomatizzarlo.
+        Inserisci i dati richiesti e ti arriverà una mail conferma istantanea. Se non ti arriva alcuna mail rifai la procedura.    
     </div>
     <div class="box">
         <div id="inserisci"></div>
-        <input type="text" id="nome" placeholder="nome e cognome"><br>
+        <input type="text" class="corto" id="nome" placeholder="nome">
+        <input type="text" class="corto" id="cognome" placeholder="Cognome"><br>
         <input type="text" id="email" placeholder="email"><br>
         <input type="text" id="numero" placeholder="numero"><br>
         <input type="text" id="indirizzo" placeholder="indirizzo"><br>
-        <div id="scelta" class="alexa" onclick="if(document.getElementById('apple').checked==1){document.getElementById('alexa').checked=0;}else{document.getElementById('alexa').checked=!document.getElementById('alexa').checked;}">
-            <input type="checkbox" id="alexa" class="scelta"/>
-            <div class="scelta">Alexa</div>
-        </div><br>
-        <div id="scelta2" class="alexa" onclick="if(document.getElementById('alexa').checked==1){document.getElementById('apple').checked=0;}else{document.getElementById('apple').checked=!document.getElementById('apple').checked;}">
-            <input type="checkbox" id="apple" class="scelta"/>
-            <div class="scelta">Apple</div>
-        </div><br>
+        <input type="text" id="mode" placeholder="modalità: assistenza/consulenza..."><br>
+        <br>
         <button onclick="invia()">Invia</button> 
     </div>
 </body>

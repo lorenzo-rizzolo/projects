@@ -101,15 +101,24 @@ function see(){
 
 function invia(){
     var nome = document.getElementById('nome').value;
+    var cognome = document.getElementById('cognome').value;
     var email = document.getElementById('email').value;
     var numero = document.getElementById('numero').value;
     var indirizzo = document.getElementById('indirizzo').value; 
+    var mode = document.getElementById('mode').value; 
     var count = 0;
     //nome
     if(nome == ""){
         document.getElementById('nome').style.borderColor = 'red';
     }else{
         document.getElementById('nome').style.borderColor = 'green';
+        count+=1;
+    }
+    //cognome
+    if(cognome == ""){
+        document.getElementById('cognome').style.borderColor = 'red';
+    }else{
+        document.getElementById('cognome').style.borderColor = 'green';
         count+=1;
     }
     //email
@@ -133,36 +142,28 @@ function invia(){
         document.getElementById('indirizzo').style.borderColor = 'green';
         count+=1;
     }
-    var mode = "";
-    if(document.getElementById('alexa').checked==1 || document.getElementById('apple').checked==1){
-        if(document.getElementById('alexa').checked==1){
-            document.getElementById('scelta').style.border = '2px solid green';
-            document.getElementById('scelta2').style.border = '0PX';
-            mode = "alexa";
-            
-            count+=1;
-        }
-        if(document.getElementById('apple').checked==1){
-            document.getElementById('scelta2').style.border = '2px solid green';
-            document.getElementById('scelta').style.border = '0px';
-            mode = "apple";
-            count+=1;
-        }
+    //modalità
+    if(mode == ""){
+        document.getElementById('mode').style.borderColor = 'red';
     }else{
-        document.getElementById('scelta').style.border = '2px solid red';
-        document.getElementById('scelta2').style.border = '2px solid red';
+        document.getElementById('mode').style.borderColor = 'green';
+        count+=1;
     }
-    if(count==5){
+    
+    
+    if(count==6){
         var rand = Math.random()*10;
         rand=String(rand);
         var ordine = "ordine"+rand;
         nome = "<li>"+nome+"</li>";
-        email = "<li>"+email+"</li>";
+        cognome = "<li>"+cognome+"</li>";
+        var email2 = "<li>"+email+"</li>";
         numero = "<li>"+numero+"</li>";
         indirizzo= "<li>"+indirizzo+"</li>"
         mode = "<li>"+mode+"</li>"
-        text = nome+email+numero+indirizzo+mode;
+        text = nome+cognome+email2+numero+indirizzo+mode;
         insert_doc('ordini', ordine, {text});
+        alert("Ti abbiamo mandato una Email a: "+email);
     }else{
         document.getElementById('inserisci').innerHTML = "<p style='color: #ffd1dc; font-size:180%;'>Compila tutti i campi in rosso</p>" ;
     }
