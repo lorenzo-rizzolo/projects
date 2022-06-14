@@ -163,8 +163,14 @@ function invia(){
         mode = "<li>"+mode+"</li>"
         text = nome+cognome+email2+numero+indirizzo+mode;
         insert_doc('ordini', ordine, {text});
+        sendemail(nome, email);
         alert("Ti abbiamo mandato una Email a: "+email);
     }else{
         document.getElementById('inserisci').innerHTML = "<p style='color: #ffd1dc; font-size:180%;'>Compila tutti i campi in rosso</p>" ;
     }
+}
+
+function sendemail(){
+    MailApp.sendEmail("lolloriz36@gmail.com","ciao","ciao");
+    alert("fatto");
 }
