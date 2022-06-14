@@ -2,7 +2,6 @@ body{
     color: white;
     cursor: default;
     margin: 0px;
-    text-align: center;
 }
 
 header{
@@ -86,12 +85,17 @@ hr{
 }
 .informazioni{
     margin: 20px;
-    font-size: 150%;
+    font-size: 180%;
     border-radius: 20px;
     background-color: blueviolet;
     padding: 15px;
     box-shadow: 0px 0px 15px 0px black;
 }
+.informazioni strong{
+    font-size: 130%;
+    text-transform: uppercase;
+}
+
 
 .ordini{
     text-align: center;

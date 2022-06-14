@@ -18,7 +18,7 @@ header .title{
 }
 header a{
     text-decoration: none;
-    font-size: 150%;
+    font-size: 180%;
     color: blueviolet;
 }
 a:hover{
@@ -41,7 +41,7 @@ a{
     font-size: 110%;
 }
 .contenuto strong{
-    color: gold;
+    color: black;
     font-size: 120%;
     text-transform: uppercase;
 }
@@ -85,7 +85,7 @@ footer{
     width: 200px;
     text-align: center;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 170%;
     padding: 15px;
     padding-left: 0px;
     margin-top: 20px;
