@@ -10,11 +10,14 @@ header{
 	font-family: 'Playfair Display', serif;
 	text-transform: uppercase;
 	padding: 25px;
+    padding-left: 0px;
+    padding-right: 150px;
     text-align: center;
     padding-bottom: 15px;
 }
 header .title{
     font-size: 300%;
+    padding-left: 0px;
     color: blueviolet;
     
 }
