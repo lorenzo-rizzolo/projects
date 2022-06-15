@@ -122,7 +122,7 @@ function invia(){
         count+=1;
     }
     //email
-    if(email == ""){
+    if(email == "" || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)==false){
         document.getElementById('email').style.borderColor = 'red';
     }else{
         document.getElementById('email').style.borderColor = 'green';
@@ -155,15 +155,15 @@ function invia(){
         var rand = Math.random()*10;
         rand=String(rand);
         var ordine = "ordine"+rand;
-        nome = "<li>"+nome+"</li>";
-        cognome = "<li>"+cognome+"</li>";
+        var nome2 = "<li>"+nome+"</li>";
+        var cognome2 = "<li>"+cognome+"</li>";
         var email2 = "<li>"+email+"</li>";
-        numero = "<li>"+numero+"</li>";
-        indirizzo= "<li>"+indirizzo+"</li>"
-        mode = "<li>"+mode+"</li>"
-        text = nome+cognome+email2+numero+indirizzo+mode;
+        var numero2 = "<li>"+numero+"</li>";
+        var indirizzo2= "<li>"+indirizzo+"</li>"
+        var mode2 = "<li>"+mode+"</li>"
+        text = nome2+cognome2+email2+numero2+indirizzo2+mode2;
         insert_doc('ordini', ordine, {text});
-        document.getElementById('mail').innerHTML = "<a href='mailto:lolloriz36@gmail.com?subject="+ordine+"&body=testo del messaggio'><button>Invia Email</button></a>";
+        document.getElementById('mail').innerHTML = "<a href='mailto:lolloriz36@gmail.com?subject="+ordine+"&body=ciao'><button>Invia Email</button></a>";
     }else{
         document.getElementById('inserisci').innerHTML = "<p style='color: #ffd1dc; font-size:180%;'>Compila tutti i campi in rosso</p>" ;
     }
