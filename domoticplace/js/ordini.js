@@ -163,7 +163,7 @@ function invia(){
         var mode2 = "<li>"+mode+"</li>"
         text = nome2+cognome2+email2+numero2+indirizzo2+mode2;
         insert_doc('ordini', ordine, {text});
-        document.getElementById('mail').innerHTML = "<a href='mailto:lolloriz36@gmail.com?subject="+ordine+"&body=ciao'><button>Invia Email</button></a>";
+        document.getElementById('mail').innerHTML = "<a href='mailto:lolloriz36@gmail.com?subject="+ordine+"&body=Salve%20Rizzolo.%0AMi%20chiamo%20"+nome+"%20"+cognome+",%20abito%20in%20"+indirizzo+"%20e%20ti%20scrivo%20per%20un%20servizio%20di%20"+mode+".%0AAttendo una mail di conferma.'><button>Invia Email</button></a>";
     }else{
         document.getElementById('inserisci').innerHTML = "<p style='color: #ffd1dc; font-size:180%;'>Compila tutti i campi in rosso</p>" ;
     }
