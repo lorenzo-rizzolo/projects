@@ -15,7 +15,7 @@ header{
 }
 header .title{
     font-size: 280%;
-    color: blueviolet;
+    color: #007fff;
 }
 header p{
     margin-bottom: 0px;
@@ -24,7 +24,7 @@ header p{
 header a{
     text-decoration: none;
     font-size: 190%;
-    color: blueviolet;
+    color: #007fff;
 }
 .box{
     width: 250px;
@@ -46,7 +46,7 @@ header a{
     color: white;
 }*/
 .box span{
-    color: blueviolet;
+    color: #007fff;
     font-size: 150%;
 }
 .box img{
@@ -69,12 +69,12 @@ a{
     margin-top: 20px;
     margin-bottom:50px;
     margin-left: 20px;
-    color: blueviolet;
+    color: #007fff;
 }
 hr{
     padding: 4px;
-    border-color: blueviolet;
-    background-color: blueviolet;
+    border-color: #007fff;
+    background-color: #007fff;
 }
 .mini-title {
     background-color: #c06c84;
@@ -95,14 +95,14 @@ hr{
 
 .titolo{
     font-size: 250%;
-    color: blueviolet;
+    color: #007fff;
     text-align: center;
     margin: 20px;
     margin-top: 50px;
 }
 .specifica{
     font-size: 170%;
-    background-color: blueviolet;
+    background-color: #007fff;
     text-align: center;
     padding: 10px;
     width: 700px;

@@ -1,6 +1,6 @@
 body{
     /*background-color: #f8b195;*/
-    color: blueviolet;
+    color: #007fff;
     cursor:default;
     margin: 0px;
 }
@@ -18,7 +18,7 @@ header{
 header .title{
     font-size: 300%;
     padding-left: 0px;
-    color: blueviolet;
+    color: #007fff;
     
 }
 header p{
@@ -28,7 +28,7 @@ header p{
 header a{
     text-decoration: none;
     font-size: 190%;
-    color: blueviolet;
+    color: #007fff;
 }
 header a:hover{
     color: gold;
@@ -39,7 +39,7 @@ header a:hover{
     color: white;
     font-size: 210%;
     border-radius: 20px;
-    background-color: blueviolet;
+    background-color: #007fff;
     padding: 20px;
     box-shadow: 0px 0px 15px 0px black;
 }
@@ -64,13 +64,13 @@ header a:hover{
     margin-bottom: 500px;
     width: 700px;
     text-align: center;
-    background-color: blueviolet;
+    background-color: #007fff;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px black;
 }
 button{
-    background-color: blueviolet;
+    background-color: #007fff;
     border: 2px solid white;
     border-radius: 10px;
     color: white;

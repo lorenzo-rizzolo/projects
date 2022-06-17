@@ -14,12 +14,12 @@ header{
 }
 header .title{
     font-size: 280%;
-    color: blueviolet;
+    color: #007fff;
 }
 header a{
     text-decoration: none;
     font-size: 180%;
-    color: blueviolet;
+    color: #007fff;
 }
 a:hover{
     cursor: pointer;
@@ -34,7 +34,7 @@ a{
     margin-top: 20px;
     border-radius: 20px;
     margin: 20px;
-    color: blueviolet;
+    color: #007fff;
     text-align: left;
 }
 .contenuto p{
@@ -66,7 +66,7 @@ p{
     font-size: 140%;
     margin-top: 20px;
     border-radius: 20px;
-    color: blueviolet;
+    color: #007fff;
 }
 .box strong{
     color: gold;
@@ -91,5 +91,5 @@ footer{
     margin-top: 20px;
     margin-bottom:50px;
     margin-left: 20px;
-    color: blueviolet;
+    color: #007fff;
 }
