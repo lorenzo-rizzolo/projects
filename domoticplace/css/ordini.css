@@ -48,7 +48,7 @@ header a:hover{
     width: 500px;
     font-size: 180%;
     height: 65px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid white;
 }
 .corto{
@@ -56,7 +56,7 @@ header a:hover{
     margin: 20px;
     font-size: 180%;
     height: 65px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid white;
 }
 .box{
@@ -66,6 +66,8 @@ header a:hover{
     text-align: center;
     background-color: #007fff;
     padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px black;
 }
