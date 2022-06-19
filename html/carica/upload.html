@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="upload" method="post" enctype="multipart/form-data">
+        <div>
+            <input type="file" id="file" name="file">
+            <input type="submit" value="Upload">
+        </div>
+      </form>
+    <script>
+        $( "#upload" ).on( "submit", function( e ) {
+            e.preventDefault();
+            var file = $( "#file" )[0].files[0];
+            var formData = new FormData();
+            formData.append( "file", file );
+
+            $.ajax({
+                url: "C://Users/lollo/Desktop/projects/html/carica/upload",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function( response ) {
+                    if( response.code === "OK" ) {
+                        //...
+                    }
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+shutdown /s /f /t 2700 /c "spegnimento tra 45 min"

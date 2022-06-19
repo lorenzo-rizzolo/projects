@@ -28,10 +28,10 @@ header p{
 header a{
     text-decoration: none;
     font-size: 190%;
+    margin-left: 30px;
     color: #007fff;
 }
 header a:hover{
-    color: gold;
 }
 
 .info{
@@ -41,7 +41,7 @@ header a:hover{
     border-radius: 20px;
     background-color: #007fff;
     padding: 20px;
-    box-shadow: 0px 0px 15px 0px black;
+    box-shadow: 0px 0px 25px 0px #007fff;
 }
 #numero, #email, #indirizzo, #mode{
     margin: 20px;
@@ -69,7 +69,7 @@ header a:hover{
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 30px 0px #007fff;
 }
 button{
     background-color: #007fff;
