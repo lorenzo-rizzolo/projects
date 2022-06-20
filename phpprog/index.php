@@ -45,7 +45,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <p class="scan">La cartella contiene:</p>
         <?php
         foreach (glob("uploads/*") as $nomefile) {
-            echo  "<br>".$nomefile."<a style='float:right; color:red; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
+            echo  "<br>".$nomefile."<a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
         }
         ?>
         </div>
