@@ -17,7 +17,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
             $check = true;
             $output = "";
 
-            if(file_exists($target_file)){
+            if(file_exists($target_file) && $_FILES['file']['name']!=null){
                 $output = "Il file esiste già! <br> Ho provveduto a sostituirlo";
                 unlink($target_file);
             }
