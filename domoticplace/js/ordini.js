@@ -77,6 +77,10 @@ function change(){
     
 }
 
+function run_mail(){
+    console.log("mail");
+}
+
 //console.log("SCRIVO NEL DB");
 //funzioni database
 function write(){
