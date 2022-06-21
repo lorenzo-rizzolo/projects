@@ -10,6 +10,7 @@ input{
     padding: 20px;
 }
 .files{
+    color: lightgray;
     text-align: left;
     width: 800px;
     margin: auto;
