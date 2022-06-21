@@ -42,9 +42,8 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         ?>
         
         <div class="files">
-        
+        <p class="scan">La cartella contiene:</p>
         <?php
-        echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span> contiene:</p>";
         $count = 0;
         echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true'>&#8592;Back</a><br>";
         echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button><br>";

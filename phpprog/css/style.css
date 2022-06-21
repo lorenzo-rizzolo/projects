@@ -66,3 +66,18 @@ a{
     color: lightgoldenrodyellow;
     
 }
+button{
+    background-color: gray;
+    border: 2px solid lightgoldenrodyellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    color: gold;
+    font-size: 90%;
+}
+.percorso{
+    font-size: 60%;
+    color: lightgoldenrodyellow;
+    margin-left: 10px;
+    margin-right: 10px;
+}

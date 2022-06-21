@@ -4,7 +4,7 @@
     <p class="adv">Per selezionare più files tieni premuto <span style="text-decoration: underline;">Ctrl</span> durante la selezione. <br>
     Se il file esiste già vi uscir&agrave; la scritta "il file esiste gi&agrave;! <br>
 Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://localhost/css/style.css">
     <form method="post" enctype="multipart/form-data">
         <input class="default" type="file" name="file" multiple><br>
         <input class="default" type="submit" value="Carica">
@@ -42,20 +42,22 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         ?>
         
         <div class="files">
-        <p class="scan">La cartella contiene:</p>
+        
         <?php
+        echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span> contiene:</p>";
         $count = 0;
-        echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true'>&#8592;Back</a>";
+        echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true'>&#8592;Back</a><br>";
+        echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button><br>";
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";
         foreach (glob("*") as $nomefile) {
-            if($nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
+            if($nomefile!="newfolder.php"&&$nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
                 if(is_file($nomefile)){
                     $n = $count+1000000;
                     echo  "<br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
                     $count += 1;
                 }else{
-                    echo "<br><a href='".$nomefile."/index.php'>Apri '".$nomefile."'</a>";
+                    echo "<br><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
                 }
             }
             

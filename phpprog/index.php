@@ -42,13 +42,15 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         ?>
         
         <div class="files">
-        <p class="scan">La cartella contiene:</p>
+        
         <?php
+        echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span> contiene:</p>";
         $count = 0;
+        echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button>";
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";
         foreach (glob("*") as $nomefile) {
-            if($nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove" && $nomefile!="uploads"){
+            if($nomefile!="cartelle_imp" && $nomefile!="newfolder.php"&& $nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove" && $nomefile!="uploads"){
                 if(is_file($nomefile)){
                     $n = $count+1000000;
                     echo  "<br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
