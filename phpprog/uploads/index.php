@@ -11,7 +11,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
     </form>
     <?php
         if($_SERVER['REQUEST_METHOD']=="POST"){
-            $upload_path = "";
+            $upload_path = "./";
             $filename = basename($_FILES['file']['name']);
             $target_file = $upload_path.$filename;
             $check = true;
@@ -45,10 +45,11 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <p class="scan">La cartella contiene:</p>
         <?php
         $count = 0;
+        echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true'>&#8592;Back</a>";
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";
         foreach (glob("*") as $nomefile) {
-            if($nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove" && $nomefile!="uploads"){
+            if($nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
                 if(is_file($nomefile)){
                     $n = $count+1000000;
                     echo  "<br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";

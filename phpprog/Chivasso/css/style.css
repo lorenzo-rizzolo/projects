@@ -2,10 +2,7 @@ body{
     background-color: rgb(118, 0, 0);
     cursor: default;
 }
-*{
-    font-family: 'Times New Roman', Times, serif;
-}
-form .default{
+input{
     font-size: 150%;
     margin: 20px;
     border: 2px solid black;
@@ -13,33 +10,14 @@ form .default{
     padding: 20px;
 }
 .files{
-    text-align: left;
-    width: 1000px;
     color: lightgray;
+    text-align: left;
+    width: 800px;
     margin: auto;
     font-size: 150%;
     margin-bottom: 200px;
 }
-.delete{
-    margin-right: 80px;
-    text-transform: uppercase;
-    color: gold;
-    background-color: gray;
-    border: 0px;
-    font-size: 100%;
-}
-.delete:hover{
-    cursor: pointer;
-}
-.check{
-    margin: 20px;
-    margin-left: 0px;
-    text-transform: uppercase;
-    background-color: gray;
-    border: 0px;
-    color: gold;
-    font-size: 70%;
-}
+
 .all{
     text-align: center;
     padding: 20px;
