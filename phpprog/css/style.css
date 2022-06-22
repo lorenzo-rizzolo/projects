@@ -82,6 +82,12 @@ button{
     margin-left: 10px;
     margin-right: 10px;
 }
-.cartella{
+input{
     border-radius: 20px;
+    margin: auto;
+}
+.increadir{
+    margin: auto;
+    width: 500px;
+    text-align: center;
 }
