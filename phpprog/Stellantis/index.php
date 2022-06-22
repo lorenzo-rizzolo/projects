@@ -4,7 +4,7 @@
     <p class="adv">Per selezionare più files tieni premuto <span style="text-decoration: underline;">Ctrl</span> durante la selezione. <br>
     Se il file esiste già vi uscir&agrave; la scritta "il file esiste gi&agrave;! <br>
 Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
-    <link rel="stylesheet" href="http://localhost/css/style.css">
+    <link rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
     <form method="post" enctype="multipart/form-data">
         <input class="default" type="file" name="file" multiple><br>
         <input class="default" type="submit" value="Carica">
