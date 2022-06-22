@@ -82,7 +82,7 @@ button{
     margin-left: 10px;
     margin-right: 10px;
 }
-input{
+input[type="text"]{
     border-radius: 20px;
     margin: auto;
 }
