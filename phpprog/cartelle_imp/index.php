@@ -46,7 +46,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <?php
         echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span><br> contiene:</p>";
         $count = 0;
-        echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true'>&#8592;Back</a><br>";
+        echo "<a href='../'>&#8592;Back</a><br>";
         echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button><br>";
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";

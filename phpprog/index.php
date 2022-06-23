@@ -44,7 +44,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <div class="files">
         
         <?php
-        echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span> contiene:</p>";
+        echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span> <br>contiene:</p>";
         $count = 0;
         echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button>";
         echo "<form method='post'>";
