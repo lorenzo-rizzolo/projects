@@ -59,8 +59,8 @@ button:hover, a:hover{
     color: lightgoldenrodyellow;
 }
 img{
-    width:20px;
-    height:20px;
+    width:25px;
+    height:25px;
 }
 .scan{
     font-size: 150%;
@@ -96,6 +96,7 @@ input[type="text"]{
 }
 input[type="file"]{
     color:lightgoldenrodyellow;
+    font-size: 110%;
 }
 .increadir{
     margin: auto;
