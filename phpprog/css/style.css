@@ -55,7 +55,10 @@ button:hover, a:hover{
 
 .adv{
     font-size: 150%;
-    text-decoration: underline;
+}
+img{
+    width:100px;
+    height:100px;
 }
 .scan{
     font-size: 150%;

@@ -40,7 +40,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         
 
         ?>
-        
+   
         <div class="files">
         
         <?php
@@ -57,7 +57,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                     echo  "<br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
                     $count += 1;
                 }else{
-                    echo "<br><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
+                    echo "<img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css'><br><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
                 }
             }
             
