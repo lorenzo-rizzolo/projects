@@ -1,5 +1,5 @@
 <?php
-echo "<a style='font-size:150%;' href='../'>&#8592;Back</a>";?>
+echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";?>
 <form method="POST">
   <link  rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
 <div class="increadir">

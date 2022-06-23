@@ -4,14 +4,14 @@
     <p class="adv">Per selezionare più files tieni premuto <span style="text-decoration: underline;">Ctrl</span> durante la selezione. <br>
     Se il file esiste già vi uscir&agrave; la scritta "il file esiste gi&agrave;! <br>
 Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
     <form method="post" enctype="multipart/form-data">
         <input class="default" type="file" name="file" multiple><br>
         <input class="default" type="submit" value="Carica">
     </form>
     <?php
         if($_SERVER['REQUEST_METHOD']=="POST"){
-            $upload_path = "";
+            $upload_path = "./";
             $filename = basename($_FILES['file']['name']);
             $target_file = $upload_path.$filename;
             $check = true;
@@ -40,26 +40,25 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         
 
         ?>
-        
+   
         <div class="files">
         
         <?php
-        echo "<p class='scan'>La cartella<span class='percorso'> Home </span> <br>contiene:</p>";
+        echo "<p class='scan'>La cartella<span class='percorso'>".getcwd()."</span><br> contiene:</p>";
         $count = 0;
-        echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button>";
+        echo "<a href='../'>&#8592;Back</a><br>";
+        echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button><br>";
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";
         foreach (glob("*") as $nomefile) {
-            if($nomefile!="cartelle_imp" && $nomefile!="newfolder.php"&& $nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove" && $nomefile!="uploads"){
-                
+            if($nomefile!="newfolder.php"&&$nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
                 if(is_file($nomefile)){
                     $n = $count+1000000;
-                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a style='color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
+                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a style='margin-left:20px; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
                     $count += 1;
                 }else{
                     echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";
                 }
-               
             }
             
         }
