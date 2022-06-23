@@ -40,7 +40,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         
 
         ?>
-        
+   
         <div class="files">
         
         <?php
@@ -54,10 +54,10 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
             if($nomefile!="newfolder.php"&&$nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
                 if(is_file($nomefile)){
                     $n = $count+1000000;
-                    echo  "<br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
+                    echo  "<img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
                     $count += 1;
                 }else{
-                    echo "<br><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
+                    echo "<img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><br><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
                 }
             }
             
