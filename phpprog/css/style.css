@@ -67,7 +67,7 @@ img{
 }
 a{
     color: lightgoldenrodyellow;
-    
+    text-decoration: none;
 }
 button{
     background-color: gray;
