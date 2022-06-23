@@ -54,10 +54,10 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                 
                 if(is_file($nomefile)){
                     $n = $count+1000000;
-                    echo  "<br><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
+                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a style='float:right; color:gold; text-decoration:none; text-transform:uppercase;' href='".$nomefile."' download>Scarica</a>";
                     $count += 1;
                 }else{
-                    echo "<br><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
+                    echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>Apri la cartella: '".$nomefile."'</a>";
                 }
                
             }
