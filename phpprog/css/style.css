@@ -15,7 +15,7 @@ form .default{
 .files{
     text-align: left;
     width: 1000px;
-    color: lightgray;
+    color: lightgoldenrodyellow;
     margin: auto;
     font-size: 150%;
     margin-bottom: 200px;
@@ -78,8 +78,9 @@ button{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0px;
-    color: gold;
-    font-size: 90%;
+    padding: 5px;
+    color: lightgoldenrodyellow;
+    font-size: 100%;
 }
 .percorso{
     color: lightgoldenrodyellow;
@@ -92,6 +93,9 @@ input[type="text"]{
     font-size:120%;
     height:50px;
     width:300px;
+}
+input[type="file"]{
+    color:lightgoldenrodyellow;
 }
 .increadir{
     margin: auto;
