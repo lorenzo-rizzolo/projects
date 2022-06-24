@@ -109,5 +109,9 @@ input[type="file"]{
     width: 50px;
     text-align: center;
     padding: 0px;
+    height: 25px;
+    padding-left: 20px;
+    padding-right:20px;
+    
     border-radius: 5px;
 }
