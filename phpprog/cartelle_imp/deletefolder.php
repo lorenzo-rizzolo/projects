@@ -18,7 +18,10 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
                 echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";
             }
         }
-        
+    }
+    $file = $_POST['cartella'];
+    if($file==""){
+        echo "vuoto";
     }
 ?>
 </div>
