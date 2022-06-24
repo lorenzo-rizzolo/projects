@@ -16,7 +16,7 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";?>
       if($check==true) {
         if(mkdir($cartella)){
           echo "<p style='color:lightgoldenrodyellow'>La cartella ed i file di configurazione sono stati creati. Aggiorna la pagina precedente per renderla visibile.</p>";
-          $source_path = "cartelle_imp\index.php";
+          $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/index.php";
           $destination_path = $cartella."/index.php" ;
           copy($source_path, $destination_path);
           $source_path = "cartelle_imp/newfolder.php";

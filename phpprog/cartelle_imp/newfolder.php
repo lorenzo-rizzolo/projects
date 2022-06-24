@@ -25,6 +25,9 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
           $source_path = "cartelle_imp/newfolder.php";
           $destination_path = $cartella."/newfolder.php" ;
           copy($source_path, $destination_path);
+          $source_path = "cartelle_imp/deletefolder.php";
+          $destination_path = $cartella."/deletefolder.php" ;
+          copy($source_path, $destination_path);
         }
         
       }else{

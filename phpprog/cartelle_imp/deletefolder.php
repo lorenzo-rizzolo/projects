@@ -8,6 +8,7 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
 <input class="cartella" type="text" name="cartella" placeholder="file o cartella da eliminare">
 </div>
 </form>
+<div id="inserisci"></div>
 <div class='filetodelete'>
 <?php
     foreach (glob("*") as $nomefile) {
@@ -20,8 +21,31 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
         }
     }
     $file = $_POST['cartella'];
-    if($file==""){
-        echo "vuoto";
+    $check = false;
+    if(is_file($file)){
+        foreach (glob("*") as $nomefile) {
+            if($file==$nomefile&&$file!="deletefolder.php"&&$file!="newfolder.php"&&$file!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $file!="css" && $file!="favicon.ico"&& $file!="index.php"&& $file!="info server.txt"&& $file!="upload.php"&& $file!="prove"){
+                $check=true;
+            }
+        }
+        if($check==true){
+            unlink($file);
+            echo "<script>window.location.reload();</script>";
+        }else{
+            echo "<script>window.location.reload();</script>";
+        }
+    }elseif(is_dir($file)){
+        foreach (glob("*") as $nomefile) {
+            if($file==$nomefile&&$file!="deletefolder.php"&&$file!="newfolder.php"&&$file!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $file!="css" && $file!="favicon.ico"&& $file!="index.php"&& $file!="info server.txt"&& $file!="upload.php"&& $file!="prove"){
+                $check=true;
+            }
+        }
+        if($check==true){
+            rmdir($file);
+            echo "<script>window.location.reload();</script>";
+        }else{
+            echo "<script>window.location.reload();</script>";
+        }
     }
 ?>
 </div>
