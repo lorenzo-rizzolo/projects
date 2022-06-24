@@ -1,5 +1,7 @@
 <?php
-echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";?>
+echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
+?>
+<div class='title'><p>inserisci il nome della nuova cartella</p></div>
 <form method="POST">
   <link  rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
 <div class="increadir">

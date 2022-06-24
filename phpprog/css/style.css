@@ -53,6 +53,13 @@ h1{
 button:hover, a:hover{
     cursor: pointer;
 }
+.title{
+    font-size:170%;
+    color:lightgoldenrodyellow;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
 
 .adv{
     font-size: 150%;
@@ -91,6 +98,7 @@ input[type="text"]{
     border-radius: 20px;
     margin: auto;
     font-size:120%;
+    padding-left: 20px;
     height:50px;
     width:300px;
 }
