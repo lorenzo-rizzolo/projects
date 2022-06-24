@@ -35,14 +35,23 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
             echo "<script>window.location.reload();</script>";
         }
     }elseif(is_dir($file)){
+        $check=false;
         foreach (glob("*") as $nomefile) {
             if($file==$nomefile&&$file!="deletefolder.php"&&$file!="newfolder.php"&&$file!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $file!="css" && $file!="favicon.ico"&& $file!="index.php"&& $file!="info server.txt"&& $file!="upload.php"&& $file!="prove"){
                 $check=true;
             }
         }
         if($check==true){
-            rmdir($file);
-            echo "<script>window.location.reload();</script>";
+            foreach (glob($file."/*") as $f){
+                if(is_file($f)){
+                    unlink($f);
+                }
+            }
+              if(rmdir($file)){
+                echo "<script>window.open('index.php','_self');</script>";
+              }else{
+                echo "<script>window.open('index.php','_self'); alert('cartella non eliminata');</script>";
+              }
         }else{
             echo "<script>window.location.reload();</script>";
         }
