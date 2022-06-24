@@ -57,7 +57,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                     echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a><a class='opt' href='deletefolder.php'><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cestino.png'></a>";
                     $count += 1;
                 }else{
-                    echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";
+                    echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a> <a class='opt' href='deletefolder.php'><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cestino.png'></a>";
                 }
             }
             

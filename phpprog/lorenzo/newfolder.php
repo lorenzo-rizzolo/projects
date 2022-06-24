@@ -1,5 +1,7 @@
 <?php
-echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";?>
+echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
+?>
+<div class='title'><p>inserisci il nome della nuova cartella</p></div>
 <form method="POST">
   <link  rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
 <div class="increadir">
@@ -12,6 +14,7 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";?>
       $check=true;
       if($cartella == $cart){
         $check=false;
+        echo "la cartella esiste gi&agrave;";
       }
       if($check==true) {
         if(mkdir($cartella)){
@@ -19,8 +22,11 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";?>
           $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/index.php";
           $destination_path = $cartella."/index.php" ;
           copy($source_path, $destination_path);
-          $source_path = "cartelle_imp/newfolder.php";
+          $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/newfolder.php";
           $destination_path = $cartella."/newfolder.php" ;
+          copy($source_path, $destination_path);
+          $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/deletefolder.php";
+          $destination_path = $cartella."/deletefolder.php" ;
           copy($source_path, $destination_path);
         }
         
