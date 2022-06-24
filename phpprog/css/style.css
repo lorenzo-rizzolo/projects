@@ -58,7 +58,7 @@ button:hover, a:hover{
     color:lightgoldenrodyellow;
     text-align: center;
     text-transform: uppercase;
-    
+
 }
 
 .adv{
@@ -112,7 +112,7 @@ input[type="file"]{
     text-align: center;
 }
 .opt{
-    margin-left: 20px;
+    margin-left: 30px;
     background-color:rgba(255, 255, 255, 0.727);
     width: 50px;
     text-align: center;
@@ -120,6 +120,10 @@ input[type="file"]{
     height: 25px;
     padding-left: 20px;
     padding-right:20px;
-    
     border-radius: 5px;
+}
+.filetodelete{
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: 120%;
 }

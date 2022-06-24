@@ -14,6 +14,7 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
       $check=true;
       if($cartella == $cart){
         $check=false;
+        echo "la cartella esiste gi&agrave;";
       }
       if($check==true) {
         if(mkdir($cartella)){
