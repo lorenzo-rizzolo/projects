@@ -1,8 +1,10 @@
 <?php
-echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true'>&#8592;Back</a>";?>
+echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
+?>
+<div class='title'><p>inserisci il nome della nuova cartella</p></div>
 <form method="POST">
-  <link rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
-  <div class="increadir">
+  <link  rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
+<div class="increadir">
 <input class="cartella" type="text" name="cartella" placeholder="Nome della nuova cartella">
 </div>
 </form>
@@ -12,15 +14,19 @@ echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.refe
       $check=true;
       if($cartella == $cart){
         $check=false;
+        echo "la cartella esiste gi&agrave;";
       }
       if($check==true) {
         if(mkdir($cartella)){
-          echo 'La cartella ed i file di configurazione sono stati creati è stata creata';
-          $source_path = "C:\Users\lollo\Desktop\desktop\projects\phpprog\cartelle_imp\index.php";
+          echo "<p style='color:lightgoldenrodyellow'>La cartella ed i file di configurazione sono stati creati. Aggiorna la pagina precedente per renderla visibile.</p>";
+          $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/index.php";
           $destination_path = $cartella."/index.php" ;
           copy($source_path, $destination_path);
-          $source_path = "C:\Users\lollo\Desktop\desktop\projects\phpprog\cartelle_imp/newfolder.php";
+          $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/newfolder.php";
           $destination_path = $cartella."/newfolder.php" ;
+          copy($source_path, $destination_path);
+          $source_path = "https://lorenzo-rizzolo.github.io/projects/phpprog/cartelle_imp/deletefolder.php";
+          $destination_path = $cartella."/deletefolder.php" ;
           copy($source_path, $destination_path);
         }
         

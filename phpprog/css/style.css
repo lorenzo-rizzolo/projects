@@ -15,7 +15,7 @@ form .default{
 .files{
     text-align: left;
     width: 1000px;
-    color: lightgray;
+    color: lightgoldenrodyellow;
     margin: auto;
     font-size: 150%;
     margin-bottom: 200px;
@@ -53,14 +53,21 @@ h1{
 button:hover, a:hover{
     cursor: pointer;
 }
+.title{
+    font-size:170%;
+    color:lightgoldenrodyellow;
+    text-align: center;
+    text-transform: uppercase;
+
+}
 
 .adv{
     font-size: 150%;
     color: lightgoldenrodyellow;
 }
 img{
-    width:20px;
-    height:20px;
+    width:25px;
+    height:25px;
 }
 .scan{
     font-size: 150%;
@@ -78,11 +85,11 @@ button{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0px;
-    color: gold;
-    font-size: 90%;
+    padding: 5px;
+    color: lightgoldenrodyellow;
+    font-size: 100%;
 }
 .percorso{
-    font-size: 60%;
     color: lightgoldenrodyellow;
     margin-left: 10px;
     margin-right: 10px;
@@ -91,15 +98,38 @@ input[type="text"]{
     border-radius: 20px;
     margin: auto;
     font-size:120%;
+    padding-left: 20px;
     height:50px;
     width:300px;
+}
+input[type="file"]{
+    color:lightgoldenrodyellow;
+    font-size: 140%;
 }
 .increadir{
     margin: auto;
     width: 500px;
     text-align: center;
 }
+<<<<<<< HEAD
 
 .back{
     font-size: 150%;
+=======
+.opt{
+    margin-left: 30px;
+    background-color:rgba(255, 255, 255, 0.727);
+    width: 50px;
+    text-align: center;
+    padding: 0px;
+    height: 25px;
+    padding-left: 20px;
+    padding-right:20px;
+    border-radius: 5px;
+}
+.filetodelete, #inserisci{
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: 120%;
+>>>>>>> 0a616d45861692df02efbe199a545e247f74da88
 }
