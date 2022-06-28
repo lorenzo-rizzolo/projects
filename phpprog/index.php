@@ -1,4 +1,5 @@
 <body>
+    <title>Home</title>
     <div class="all">
     <link rel="icon" type="image/x-icon" href="https://lorenzo-rizzolo.github.io/projects/phpprog/favicon.ico">
     <h1>Puoi caricare uno o più file fino a 500Mb</h1>
