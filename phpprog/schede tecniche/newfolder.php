@@ -1,11 +1,8 @@
 <?php
-<<<<<<< HEAD
-echo "<a href='javascript:history.go(-1)' onMouseOver='self.status=document.referrer;return true' class='back'>&#8592;Back</a>";?>
-=======
 echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
 ?>
 <div class='title'><p>inserisci il nome della nuova cartella</p></div>
->>>>>>> 0a616d45861692df02efbe199a545e247f74da88
+
 <form method="POST">
   <link  rel="stylesheet" href="https://lorenzo-rizzolo.github.io/projects/phpprog/css/style.css">
 <div class="increadir">
