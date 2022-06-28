@@ -1,5 +1,6 @@
 <body>
     <div class="all">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <h1>Puoi caricare uno o più file fino a 500Mb</h1>
     <p class="adv">Per selezionare più files tieni premuto <span style="text-decoration: underline;">Ctrl</span> durante la selezione. <br>
     Se il file esiste già vi uscir&agrave; la scritta "il file esiste gi&agrave;! <br>
