@@ -48,7 +48,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <?php
         echo "<p class='scan'>La cartella<span class='percorso'> Home </span> <br>contiene:</p>";
         $count = 0;
-        echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button>";
+        echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button><button onclick=window.open('deletefolder.php','_self')>Elimina file/cartelle</button>";
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";
         foreach (glob("*") as $nomefile) {
@@ -56,10 +56,10 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                 
                 if(is_file($nomefile)){
                     $n = $count+1000000;
-                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cestino.png'></a>";
+                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a>";
                     $count += 1;
                 }else{
-                    echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a><a class='opt' href='deletefolder.php'><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cestino.png'></a>";
+                    echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";
                 }
                
             }
