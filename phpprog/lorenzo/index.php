@@ -1,3 +1,6 @@
+<?php
+echo "<title>".basename(getcwd())."</title>";
+?>
 <body>
     <div class="all">
     <h1>Puoi caricare uno o più file fino a 500Mb</h1>
