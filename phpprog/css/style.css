@@ -131,3 +131,9 @@ input[type="file"]{
     text-align: center;
     font-size: 120%;
 }
+#insert{
+    height: 30px;
+    width: 200px;
+    text-align: 120%;
+    padding: 5px;
+}
