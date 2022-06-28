@@ -10,7 +10,7 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
 </form>
 <div id="inserisci"></div>
 <div class='filetodelete'>
-    <span>Cartelle in:   '<?php echo basename(getcwd());?>'</span>
+    <span>File in:   '<?php echo basename(getcwd());?>'</span>
 <?php
     foreach (glob("*") as $nomefile) {
         if($nomefile!="deletefolder.php"&&$nomefile!="newfolder.php"&&$nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
