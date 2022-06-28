@@ -46,7 +46,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <div class="files">
         
         <?php
-        echo "<p class='scan'>La cartella<span class='percorso'> Home </span> <br>contiene:</p>";
+        echo "<p class='scan'>La cartella<span class='percorso'> Home </span>contiene:</p>";
         $count = 0;
         echo "<button onclick=window.open('newfolder.php','_self')>Crea Cartella</button><button onclick=window.open('deletefolder.php','_self')>Elimina file/cartelle</button>";
         echo "<form method='post'>";
