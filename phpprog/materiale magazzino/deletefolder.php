@@ -29,7 +29,7 @@ echo "<a style='font-size:150%;' href='index.php'>&#8592;Back</a>";
                 }else{
                     $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png";
                 }
-                echo  "<br><img src='".$image."'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a>";
+                echo  "<br><img src='".$image."'><span name='".$n."'>".$nomefile."</span>";
                 $count += 1;
             }else{
                 echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";
