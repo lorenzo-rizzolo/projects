@@ -66,6 +66,8 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                         $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/pptx.png";
                     }elseif($ext == "XLSX" || $ext == "XLS"){
                         $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/exel.png";
+                    }elseif($ext == "PDF"){
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/pdf.png";
                     }else{
                         $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png";
                     }
