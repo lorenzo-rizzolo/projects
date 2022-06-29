@@ -56,7 +56,18 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                 
                 if(is_file($nomefile)){
                     $n = $count+1000000;
-                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a>";
+                    $ext = strtoupper(pathinfo($nomefile,PATHINFO_EXTENSION));
+                    //echo $ext;
+                    if($ext == "DOCX"){
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/word.png";
+                    }elseif ($ext == "PPTX") {
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/pptx.png";
+                    }elseif($ext == "XLSX" || $ext == "XLS"){
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/exel.png";
+                    }else{
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png";
+                    }
+                    echo  "<br><img src='".$image."'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a>";
                     $count += 1;
                 }else{
                     echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";

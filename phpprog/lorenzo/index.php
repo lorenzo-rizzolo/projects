@@ -13,6 +13,7 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         <input class="default" type="submit" value="Carica">
     </form>
     <?php
+    $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png";
         if($_SERVER['REQUEST_METHOD']=="POST"){
             $upload_path = "./";
             $filename = basename($_FILES['file']['name']);
@@ -24,8 +25,8 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
                 $output = "Il file esiste già! <br> Ho provveduto a sostituirlo";
                 unlink($target_file);
             }
-            $ext = strtoupper(pathinfo($target_file,PATHINFO_EXTENSION));
             
+
             if($_FILES['file']['name']==null){
                 $output = "<p class='adv'>Campo di caricamento vuoto</p>";
             }
@@ -54,10 +55,21 @@ Altri errori possono essere generati dal fatto che il file è troppo grande!</p>
         echo "<form method='post'>";
         //echo "<br><input type='submit' class='check' name='submit' value='Elimina File\nSelezionati'>";
         foreach (glob("*") as $nomefile) {
-            if($nomefile!="deletefolder.php"&&$nomefile!="newfolder.php"&&$nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
+            if(($nomefile[0]!="~"&&$nomefile[1]!="$")&&$nomefile!="deletefolder.php"&&$nomefile!="newfolder.php"&&$nomefile!="https___26f4-37-103-135-64.eu.ngrok.io_phpprog_ - Google Chrome 2022-06-19 23-39-12.mp4" && $nomefile!="css" && $nomefile!="favicon.ico"&& $nomefile!="index.php"&& $nomefile!="info server.txt"&& $nomefile!="upload.php"&& $nomefile!="prove"){
                 if(is_file($nomefile)){
                     $n = $count+1000000;
-                    echo  "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a>";
+                    $ext = strtoupper(pathinfo($nomefile,PATHINFO_EXTENSION));
+                    //echo $ext;
+                    if($ext == "DOCX"){
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/word.png";
+                    }elseif ($ext == "PPTX") {
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/pptx.png";
+                    }elseif($ext == "XLSX" || $ext == "XLS"){
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/exel.png";
+                    }else{
+                        $image = "https://lorenzo-rizzolo.github.io/projects/phpprog/css/file.png";
+                    }
+                    echo  "<br><img src='".$image."'><span name='".$n."'>".$nomefile."</span><a class='opt' href='".$nomefile."' download><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/download.png'></a>";
                     $count += 1;
                 }else{
                     echo "<br><img src='https://lorenzo-rizzolo.github.io/projects/phpprog/css/cartella.png'><a href='".$nomefile."/index.php'>".$nomefile."</a>";
