@@ -36,7 +36,7 @@
         <?php
             $parola = $_POST['parola'];
             if($parola=="lrsbf"){
-                echo "<script>window.open('index.html','_self');</script>";
+                echo "<script>window.open('cloud.html','_self');</script>";
             }else{
                 if($parola!=""){
                     echo "<script>document.getElementById('inserisci').innerHTML = 'Password errata';</script>";
