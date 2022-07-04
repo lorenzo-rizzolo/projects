@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="style.css" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <form method="POST">
-    <input type="text" name="soldi" placeholder="Denaro da aggiungere/togliere"><br>
+    <input type="number" name="soldi" placeholder="Denaro da aggiungere/togliere"><br>
     <button>Aggiungi / togli</button>
 </form>
 <?php
