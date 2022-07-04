@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <style>
@@ -14,7 +15,7 @@
                 color:rgb(118,0,0);
             }
             form{
-                width:500px;
+                width:300px;
                 margin:auto;
                 margin-top:80px;
                 text-align:center;
