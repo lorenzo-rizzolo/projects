@@ -16,12 +16,12 @@ if($conto!=""){
     fclose($file);
     $file = fopen("conto.txt","r") or die("Impossibile aprire il conto.");
     echo "<script>window.open('index.php','_self');</script>";
-    echo "Soldi rimanenti: ".fread($file, filesize("conto.txt"))."€";
+    echo "Soldi rimanenti: <span>".fread($file, filesize("conto.txt"))."€</span>";
     fclose($file);
     
 }else{
     $file = fopen("conto.txt","r") or die("Impossibile aprire il conto.");
-    echo "Soldi rimanenti: ".fread($file, filesize("conto.txt"))."€";
+    echo "Soldi rimanenti: <span>".fread($file, filesize("conto.txt"))."€</span>";
     fclose($file);
 }
 ?>

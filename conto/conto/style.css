@@ -19,3 +19,7 @@ button{
     color: blue;
     padding: 15px;
 }
+span{
+    color: red;
+    font-size: 140%;
+}
