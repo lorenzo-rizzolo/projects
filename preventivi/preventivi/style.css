@@ -9,7 +9,7 @@ button{
     padding-right: 40px;
     color: blue;
     font-size: 70%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: lightblue;
@@ -43,4 +43,10 @@ hr{
 #line{
     color: red;
     font-size: 120%;
+}
+.name{
+    margin-top: 30px;
+}
+.invia{
+    height: 35px;
 }

@@ -32,3 +32,17 @@ function pezzi(){
     pezzi = parseInt(pezzi);
     document.getElementById("pezzi").innerHTML = pezzi;
 }
+
+function invia(){
+    for (let i = 0; i < 20; i++) {
+        var qua = document.getElementById(i).value;
+        var pre = document.getElementById(i+50).value;
+        var name = document.getElementById(i+100).value;
+        if(name!=""&&pre!=""){
+            if(qua==""){
+                qua=1;
+            }
+            console.log(name+" - "+qua+" - "+pre);
+        }
+    }
+}

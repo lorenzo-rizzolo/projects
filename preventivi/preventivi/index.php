@@ -16,7 +16,6 @@
         totale costo: <span id="totale"></span><br>
         pezzi totali: <span id="pezzi"></span><br>
         <button onclick="two()">calcola</button>
-        
         <hr>
     <?php
         for ($i=0; $i < 20; $i++) { 
@@ -25,6 +24,8 @@
             echo "<input id='".$t."' type='text' placeholder='prodotto'></input><input id='".$i."' type='number' placeholder='quan.'></input><input id='".$n."' type='number' placeholder='p. unit.'></input><br>";
         }
     ?>
+    <button class="invia" onclick="invia()">Invia</button>
+    
     <script>totale()</script>
     <script>pezzi()</script>
     </div>
