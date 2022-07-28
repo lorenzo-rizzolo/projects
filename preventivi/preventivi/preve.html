@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preventivi</title>
+    <style>
+        button{
+            border: 2px solid lightblue;
+            padding: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: blue;
+            font-size: 70%;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+        }
+        button:hover{
+            box-shadow: 0px 0px 10px 0px lightblue;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
+    <script src="firebase.js"></script>
+    <script>get_coll("preventivi")</script>
+    <button onclick="window.history.go(-1)"><- Torna alla schermata precedente</button>
+    <div id="text"></div>
+    
+</body>
+</html>

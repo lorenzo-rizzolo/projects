@@ -44,12 +44,14 @@ function get_coll(coll) {
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 console.log(doc.id, " => ", doc.data());
+                data=JSON.stringify(doc.data());
+                document.getElementById("text").innerHTML += doc.id+"<br>"+data+"<br><br><hr>" ;
         });
     });
 }
 
 function invia(){
-    var text = "nome - q - p.unit<br>";
+    var text = "<br><span style='color:red;'>nome - q - p.unit</span><br>";
     for (let i = 0; i < 20; i++) {
         var qua = document.getElementById(i).value;
         var pre = document.getElementById(i+50).value;
@@ -85,13 +87,13 @@ function invia(){
     tot = parseInt(tot);
 
     //testo per firebase
-    text = text+"<br>totale spesa: "+tot+"<br>pezzi totali: "+pezzi;
+    text = text+"<span style='color:green;'>totale spesa: "+tot+" &euro;<br>pezzi totali: "+pezzi+"</span><br>";
 
     var nomepre = document.getElementById("name").value;
     if(nomepre!=""){
         document.getElementById("inserisci").innerHTML = "";
         insert_doc('preventivi', nomepre, {text}) ;
-        window.open("index.php","_self");
+        //window.open("index.php","_self");
     }else{
         document.getElementById("inserisci").innerHTML = "inserisci nome preventivo";
     }
