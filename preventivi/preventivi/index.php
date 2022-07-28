@@ -9,6 +9,10 @@
     <title>Preventivi</title>
 </head>
 <body>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
+    <script src="firebase.js"></script>
     <script>totale()</script>
     <span id="line">Inserisci il prodotto, la quantit&agrave; e il prezzo unitario</span>
     <hr>
@@ -24,7 +28,8 @@
             echo "<input id='".$t."' type='text' placeholder='prodotto'></input><input id='".$i."' type='number' placeholder='quan.'></input><input id='".$n."' type='number' placeholder='p. unit.'></input><br>";
         }
     ?>
-    <button class="invia" onclick="invia()">Invia</button>
+    <div id="inserisci"></div>
+    <input type="text" id="name" placeholder="nome preventivo"><button class="invia" onclick="invia()">Invia</button>
     
     <script>totale()</script>
     <script>pezzi()</script>

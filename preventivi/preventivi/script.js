@@ -23,17 +23,17 @@ function totale(){
 function pezzi(){
     var pezzi=0;
     for (let i = 0; i < 20; i++) {
-        var tot = document.getElementById(i+50).value;
-        var num = document.getElementById(i).value;
-        if(num!="" && tot!=""){
-            pezzi = parseInt(parseInt(pezzi)+parseInt(num));;
+        var costo = document.getElementById(i+50).value;
+        var pex = document.getElementById(i).value;
+        if(pex!="" && costo!=""){
+            pezzi = parseInt(parseInt(pezzi)+parseInt(pex));;
         }
     }
     pezzi = parseInt(pezzi);
     document.getElementById("pezzi").innerHTML = pezzi;
 }
 
-function invia(){
+/*function invia(){
     for (let i = 0; i < 20; i++) {
         var qua = document.getElementById(i).value;
         var pre = document.getElementById(i+50).value;
@@ -45,4 +45,4 @@ function invia(){
             console.log(name+" - "+qua+" - "+pre);
         }
     }
-}
+}*/
