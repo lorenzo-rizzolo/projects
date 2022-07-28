@@ -14,7 +14,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
     <script src="firebase.js"></script>
     <script>totale()</script>
-    <button style="float:right;" onclick="window.open('preve.html','_self');">Preventivi</button>
+    <button style="float:right; height:60px;" onclick="window.open('preve.html','_self');">Preventivi</button>
     <span id="line">Inserisci il prodotto, la quantit&agrave; e il prezzo unitario</span>
     <hr>
     <div id="preve">
