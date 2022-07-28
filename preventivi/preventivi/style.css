@@ -3,23 +3,34 @@ body{
     font-size: 120%;
 }
 button{
-    border: 0px;
-    padding: 10px;
+    border: 2px solid lightblue;
+    padding: 5px;
     padding-left: 40px;
     padding-right: 40px;
     color: blue;
-    font-size: 110%;
+    font-size: 70%;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: lightblue;
+}
+button:hover{
+    box-shadow: 0px 0px 10px 0px lightblue;
 }
 
 input[type=number]{
     width: 80px;
 }
+input[type=text]{
+    width: 150px;
+}
 input{
     margin-bottom: 10px;
+    margin-right: 3px;
     height: 30px;
     font-size: 90%;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 hr{
