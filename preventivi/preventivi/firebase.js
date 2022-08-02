@@ -18,9 +18,21 @@ function insert_doc(coll, docname, record) {
     collection.doc(docname).set(record);
 }
 
-function del_doc(coll, docname) {
+function del_doc(){
+    /*var coll = "preventivi";
     var collection = db.collection(coll);
-    collection.doc(docname).delete();
+    collection.doc(docname).delete();*/
+    for(let i=0 ; i<50 ; i++){
+        if(document.getElementById(i).checked==1){
+            var coll = "preventivi";
+            var nuovo = i+50;
+            var docname = document.getElementById(nuovo).textContent;
+            var collection = db.collection(coll);
+            collection.doc(docname).delete();
+        }
+    }
+    
+    //window.open("index.php","_self");
 }
 
 function query_coll(coll) {
@@ -38,20 +50,26 @@ function query_coll(coll) {
 
 function get_coll(coll) {
     var collection = db.collection(coll);
+    var i=0;
 
     collection
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
-                console.log(doc.id, " => ", doc.data());
-                data=JSON.stringify(doc.data());
-                document.getElementById("text").innerHTML += doc.id+"<br>"+data+"<br><br><hr>" ;
+                //console.log(doc.id, " => ", doc.data());
+                
+                if(doc.id!="pernoneliminare"){
+                    data=JSON.stringify(doc.data());
+                    var nuovo = i+50;
+                    document.getElementById("text").innerHTML += "<div id='"+nuovo+"'>"+doc.id+"</div><br>"+data+"<br><input id='"+i+"' type='checkbox'></input style='margin-right:50px; height:70px; width:70px;'><button onclick='if(document.getElementById("+i+").checked==1){del_doc();}'>elimina</button><br><hr>" ;
+                    i+=1;
+                }
         });
     });
 }
 
 function invia(){
-    var text = "<br><span style='color:red;'>nome - q - p.unit</span><br>";
+    var text = "<br><span style='color:red;'>nome - quantità - prezzo ad unità</span><br>";
     for (let i = 0; i < 20; i++) {
         var qua = document.getElementById(i).value;
         var pre = document.getElementById(i+50).value;
@@ -86,10 +104,11 @@ function invia(){
     }
     tot = parseInt(tot);
 
+    var nomepre = document.getElementById("name").value;
     //testo per firebase
     text = text+"<span style='color:green;'>totale spesa: "+tot+" &euro;<br>pezzi totali: "+pezzi+"</span><br>";
 
-    var nomepre = document.getElementById("name").value;
+    
     if(nomepre!=""){
         document.getElementById("inserisci").innerHTML = "";
         insert_doc('preventivi', nomepre, {text}) ;

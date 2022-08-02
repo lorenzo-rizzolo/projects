@@ -33,7 +33,7 @@
     <body>
         <form method="POST">
             <div id="inserisci"></div>
-            <input type="text" name="parola" placeholder="inserisci password del cloud">
+            <input type="password" name="parola" placeholder="inserisci password del cloud">
         </form>
         <?php
             $parola = $_POST['parola'];
