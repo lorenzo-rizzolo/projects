@@ -1,0 +1,71 @@
+body{
+    font-family: anton ;
+}
+
+.title{
+    text-align: center;
+    font-size: 170%;
+    color: red;
+}
+
+hr{
+    width: 300px;
+}
+input{
+    font-size: 130%;
+    color: blue;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid blue;
+}
+input[type=number]{
+    width: 70px;
+}
+input[type=text]{
+    width: 200px;
+}
+
+.box-input{
+    text-align: center;
+    padding: 5px;
+}
+
+.materie{
+    width: 300px;
+    margin: auto;
+}
+
+.box-buttons{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.media{
+    margin-left: 10px;
+    color: red;
+}
+button{
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    border: 0px;
+    color: blue;
+    background: lightblue;
+    font-size: 120%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+button:hover, input:hover{
+    box-shadow: 0px 0px 20px 0px lightblue;
+}
+
+.delete{
+    text-align: center;
+}
+
+.pag-pre{
+    text-align: center;
+}
