@@ -4,17 +4,21 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="script.js"></script>
     <title>Conto</title>
 </head>
-<body>
+<body id="body">
     <hr>
     <div id="info">Soldi in cassaforte</div>
+    <hr>
+    <div id="color"><button class="mode" onclick="blackmode()">Black Mode</button></div>
+    <hr>
     <form method="POST">
-    <input class="num" name="soldi" type="number" placeholder="euro">
+    <input class="num" id="soldi" name="soldi" type="number" placeholder="euro">
     <span>,</span>  
-    <input class="num" name="cente" type="number" placeholder="cent">
-    <button>Invia</button><br>
-    <input class="arg" name="arg" type="text" placeholder="argomento">
+    <input class="num" id="cente" name="cente" type="number" placeholder="cent">
+    <button class="invia">Invia</button><br>
+    <input class="arg" id="arg" name="arg" type="text" placeholder="argomento">
     </form>
     <hr>
     <?php
@@ -59,12 +63,10 @@
 
             echo "<script>window.open('index.php','_self');</script>";
         }else{
-            if($conto=="" && $arg==""){
+            if($conto=="" && $cent=="" && $arg==""){
                 echo "<script>document.getElementById('info').innerHTML = 'soldi in cassaforte';</script>";
-            }elseif($arg=="" && $conto!=""){
+            }elseif($conto!="" || $cent!=""){
                 echo "<script>document.getElementById('info').innerHTML = 'inserisci argomento';</script>";
-            }elseif($arg!="" && $conto==""){
-                echo "<script>document.getElementById('info').innerHTML = 'inserisci denaro';</script>";
             }
         }
     ?>
@@ -73,7 +75,7 @@
     <div class="elenco">
     <?php
         foreach(file("elenco.txt") as $line){
-            echo "<li>".$line."</li><br>";
+            echo "<li id='elenco'>".$line."</li><br>";
         }
     ?>
     </div>

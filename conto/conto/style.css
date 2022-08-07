@@ -8,10 +8,29 @@ body{
     margin-top: 30px;
     font-size: 170%;
 }
+input{
+    border-radius: 10px;
+    border: 1px solid blue;
+}
 form span{
     font-size:180%;
 }
 button{
+    border-radius: 10px;
+    color: blue;
+    background-color: lightblue;
+    border: 0px;
+}
+button:hover{
+    box-shadow: 0px 0px 10px 0px lightblue;
+}
+.mode{
+    height: 35px;
+    font-size: 130%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.invia{
     width: 130px;
     height: 55px;
     font-size: 170%;
