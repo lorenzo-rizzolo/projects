@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(76, 126, 143);
+    margin: 0px;
+    cursor: default;
+}
+
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    height: 40px;
+    padding: 20px;
+}
+
+.title{
+    color: gold;
+    font-size: 210%;
+}
+
+.web{
+    font-size: 120%;
+    color: white;
+}
+
+.menu{
+    background-color: black;
+    font-size: 140%;
+    padding: 10px;
+}
+.menu a{
+    color: gold;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border:0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.menu a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.folder-name{
+    font-size: 140%;
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.folder-name span{
+    color: gold;
+}
+.file{
+    background-color: black;
+    width: 330px;
+    margin-top: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.file a{
+    background-color: rgba(255, 255, 255, 0.648);
+    margin-left: 20px;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+.up-files{
+    background-color: black;
+    color:white;
+    margin-top: 40px;
+    width: 330px;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 5px;
+}

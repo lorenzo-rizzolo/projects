@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(76, 126, 143);
+    margin: 0px;
+    cursor: default;
+}
+
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    height: 40px;
+    padding: 20px;
+}
+
+.title{
+    color: gold;
+    font-size: 210%;
+}
+
+.web{
+    font-size: 120%;
+    color: white;
+}
+
+.menu{
+    background-color: black;
+    font-size: 140%;
+    padding: 10px;
+}
+.menu a{
+    color: gold;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border:0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.menu a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.accedi{
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.608);
+    text-align: center;
+    width: 400px;
+}
+.accedi input{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 130%;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    border-bottom: 3px solid black;
+}
+.accedi input:hover{
+    border-bottom: 3px solid gold;
+}
+.accedi input:active{
+    border: 3px solid gold;
+}
+.accedi button{
+    margin: 10px;
+    font-size: 130%;
+    background-color: rgb(76, 126, 143);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+.accedi button:active {
+    transform: translateY(4px);
+  }
+.accedi button:hover{
+    color: white;
+    cursor: pointer;
+}
+.accedi span{
+    color: gold;
+    font-size: 150%;
+}
+.accedi span a{
+    color: gold;
+    text-decoration: none;
+}
+.accedi span a:hover{
+    color: white;
+}
