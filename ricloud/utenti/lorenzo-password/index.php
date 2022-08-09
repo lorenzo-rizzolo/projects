@@ -16,8 +16,10 @@
         <a href="http://domoticplace.sytes.net/ricloud/ricloud/index.php">Home</a>
         <a href="http://domoticplace.sytes.net/ricloud/ricloud/accedi.php">Cambia Account</a>
         <a href="http://domoticplace.sytes.net/ricloud/ricloud/info.php">Info</a>
+        <a href="newfolder.php">Nuova Cartella</a>
     </div>
-    <div class="folder-name" >Nome cartella: <span>Cartella Principale</span></div>
+    <div class="folder-name" >Nome cartella: <span>Cartella principale
+    </span></div>
     <div class="up-files">
     <form method="post" enctype="multipart/form-data">
         <input class="default" type="file" name="file" multiple>
@@ -53,15 +55,18 @@
             }
         }
     ?>
-    </div>
+        </div>
     <div class="file">
-    <?php
-        foreach(glob("*") as $file){
-            if($file!="index.php"){
-                echo "<li>".$file."<a href='".$file."' download><img src='http://domoticplace.sytes.net/ricloud/ricloud/download.png'></img></a></li>";
+        <?php
+            foreach(glob("*") as $file){
+                if(is_file($file) && $file!="newfolder.php" && $file!="index.php"){
+                    echo "<li>".$file."<a class='dow' href='".$file."' download><img src='http://domoticplace.sytes.net/ricloud/ricloud/download.png'></img></a></li>";
+                }
+                if(is_dir($file) && $file!="newfolder.php" && $file!="index.php"){
+                    echo "<a class='folder' href='".$file."'>".$file."</a>";
+                }
             }
-        }
-    ?>
+        ?>
     </div>
 </body>
 </html>
