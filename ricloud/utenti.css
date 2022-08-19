@@ -60,7 +60,7 @@ header{
     color: white;
     padding: 20px;
 }
-.file a{
+.file .dow{
     background-color: rgba(255, 255, 255, 0.648);
     margin-left: 20px;
     border-radius: 5px;
@@ -82,4 +82,8 @@ img{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-bottom: 5px;
+}
+.folder{
+    color: white;
+    text-decoration: none;
 }
