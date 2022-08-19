@@ -1,3 +1,2 @@
 sistemare login
-sistemare conto dettagliandolo
 aggiungere dettagli a grafico gantt
